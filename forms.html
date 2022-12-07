@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="nav-section">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a href="#">
+                    <img style="height: 4.5vh; width: 4.5vh; margin: 1px;"
+                        src="https://www.myvi.in/content/dam/vodafoneideadigital/homespyder/Vi-logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+
+
+<div id="alert-dialog" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Warning</strong><span id="alert-text"> You should check in on some of those fields below.</span>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+    <section id="plan-choosed-lay">
+        <center>
+            <h2 id="plan-info">Postpaid Plan, Price - ₹499</h2>
+        </center>
+    </section>
+
+    <section id="forms-section">
+
+        <div class="formbold-main-wrapper">
+            <!-- Author: FormBold Team -->
+            <!-- Learn More: https://formbold.com -->
+            <div class="formbold-form-wrapper">
+                <form action="https://formbold.com/s/FORM_ID" method="POST">
+                    <div class="formbold-mb-5">
+                        <label for="name" class="formbold-form-label"> Full Name </label>
+                        <input type="text" name="name" id="name1" placeholder="Full Name" class="formbold-form-input" />
+                    </div>
+                    <div class="formbold-mb-5">
+                        <label for="phone" class="formbold-form-label"> Phone/WhatsApp Number </label>
+                        <input type="text" name="phone" id="phone1" placeholder="Enter your phone/whatsapp number"
+                            class="formbold-form-input" />
+                        <p class="hint-text">This gives consent to Vi partners to contact you</p>
+                    </div>
+                    <!-- <div class="formbold-mb-5">
+                        <label for="email" class="formbold-form-label"> Email Address </label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email"
+                            class="formbold-form-input" />
+                    </div> -->
+
+                    <div class="formbold-mb-5">
+                        <label for="phone" class="formbold-form-label">Enter phone number you want to buy / or Existing
+                            number you want to convert</label>
+                        <input type="text" name="phone" id="phone-number" placeholder="Phone number"
+                            class="formbold-form-input" />
+                    </div>
+
+                    <!-- <div class="flex flex-wrap formbold--mx-3">
+                        <div class="w-full sm:w-half formbold-px-3">
+                            <div class="formbold-mb-5 w-full">
+                                <label for="date" class="formbold-form-label"> Date </label>
+                                <input type="date" name="date" id="date" class="formbold-form-input" />
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-half formbold-px-3">
+                            <div class="formbold-mb-5">
+                                <label for="time" class="formbold-form-label"> Time </label>
+                                <input type="time" name="time" id="time" class="formbold-form-input" />
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="formbold-mb-5">
+                        <label class="formbold-form-label formbold-form-label">
+                            Delivery Address Details
+                        </label>
+                        <div class="flex flex-wrap formbold--mx-3">
+
+
+                            <div class="w-full sm:w-half formbold-px-3">
+                                <div class="formbold-mb-5">
+                                    <input type="text" name="post-code" id="post-code" placeholder="Pincode"
+                                        class="formbold-form-input" />
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-full formbold-px-3">
+                                <div class="formbold-mb-5">
+                                    <input type="text" name="area" id="address1" placeholder="Enter full address"
+                                        class="formbold-form-input" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="hint-text-2">All fields are required</p>
+
+                    <div class="d-grid gap-2">
+                        <div id="submit-btn" type="button" class="btn btn-primary" onClick="submitForm()">Submit</div>
+                        <!-- <button id="submit-btn" class="formbold-btn">Submit</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<script src="javascript/forms.js"></script>
+
+</html>

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Open sans", serif;
+}
+
+/* card section start */
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.family-row {
+    margin: 0 -5px;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.family-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.white-card {
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fcf4e8;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    animation: show 0.4s ease;
+    /* height: 40vh; */
+}
+
+.white-card:hover {
+    border-style: solid;
+    border-color: #ee2737;
+    cursor: pointer;
+}
+
+.black-card {
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    background-color: #2f3043;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    animation: show 0.4s ease;
+    /* height: 40vh; */
+
+}
+
+.black-card:hover {
+    border-style: solid;
+    border-color: #ee2737;
+    cursor: pointer;
+}
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* card section end */
+
+.plans-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+#logo-img {
+    background-color: white;
+    height: 4vh;
+    width: 4vh;
+    margin: 1px;
+}
+
+#card-section {
+    padding-top: 20px;
+
+}
+
+.plans-button {
+    width: 40%;
+}
+
+.plans-button:hover {
+    width: 43%;
+}
+
+.plans-heading {
+    padding-left: 50px;
+    font-size: 22px;
+}
